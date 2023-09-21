@@ -33,7 +33,7 @@ int main(void) {
 }
 
 void shuffle(int Arr[], int n) {
-    for (int i = 0; i < N; i++) {       //generate the array of rooms
+    for (int i = 0; i < n; i++) {       //generate the array of rooms
         Arr[i] = i;
     }
 
