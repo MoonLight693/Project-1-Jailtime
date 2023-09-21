@@ -48,21 +48,21 @@ void shuffle(int Arr[], int n) {
     }
 }
 
-bool findsRoom(int Arr[], int n) {
-    int temp = n;
+bool findsRoom(int Arr[], int n) {      //checks if prisoner finds their room number
+    int temp = n;                       //temp for switching current number in chain
     int i = 0;
    
-    while (i < N/2) {
-        if (Arr[temp] == n) {
+    while (i < N/2) {                   //always have chances equal to half the number of rooms
+        if (Arr[temp] == n) {           //if number in box matches return true
             return true;
         }
-        else {
+        else {                          //else move to next box number in chain
             temp = Arr[temp];
             i++;
         }
     }
 
-    return false;
+    return false;                       //return false when run out of tries
 }
 
 bool safe(int Arr[]) {
