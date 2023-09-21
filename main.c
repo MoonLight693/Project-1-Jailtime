@@ -65,19 +65,19 @@ bool findsRoom(int Arr[], int n) {      //checks if prisoner finds their room nu
     return false;                       //return false when run out of tries
 }
 
-bool safe(int Arr[]) {
+bool safe(int Arr[]) {                      //checkes if all prisoners succeed
     int success = 0;
     for (int i = 0; i < N; i++) {
-        if (findsRoom(Arr, i) == true) {
-            success++;   
+        if (findsRoom(Arr, i) == true) {    //if prisoner finds room in allowed number of tries
+            success++;                      //add one to successes
         }
     }
     
-    if (success == N) {
+    if (success == N) {                     //if each prisoner succeed, return true
         return true;    
     }
     else {
-        return false;
+        return false;                       //if each prisoner failed, return flase
     }
 }
     
