@@ -9,7 +9,7 @@ bool safe(int Arr[], int n);            //Function 3: given a room, will all pri
 
 //Extra credit functions
 void victoryTest(int n);                //copy of main in a function for testing more prisoners
-//void printing(int Arr[], int n);      //prints table of room array (was for testing shuffle)
+void printing(int Arr[], int n);        //prints table of room array (was for testing shuffle)
 
 int main(void) {
     int n = 100;                        //n is used for number of rooms and for changing to 200, 500, 1000 later
@@ -112,7 +112,7 @@ void victoryTest(int n) {
 
 }
 
-/*void printing(int Arr[], int n) {       //prints room array
+void printing(int Arr[], int n) {       //prints room array
     for (int i = 0; i < n; i++) {
         if (Arr[i] > 99) {
             printf("%d ", Arr[i]);      //1 space
@@ -130,4 +130,4 @@ void victoryTest(int n) {
             }
         }       
     }
-}*/
+}
